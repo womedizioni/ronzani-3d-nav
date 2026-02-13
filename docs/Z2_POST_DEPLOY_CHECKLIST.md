@@ -6,10 +6,10 @@ Scope: rollout controllato produzione + rollback plan + verifica 24h
 ## 1) Pre-deploy (Go/No-Go)
 
 - [x] Versione plugin target definita: `1.0.0` (versione codice corrente: `0.3.0-rc1`)
-- [ ] Backup completo disponibile (DB + files) - in attesa conferma operativa hosting/DBA
+- [x] Backup completo disponibile (DB + files): `Sistema_2026-02-13_10:59` (Host, file + DB)
 - [x] Snapshot configurazioni plugin esportato (scene config + mapping)
-- [ ] Finestra di deploy confermata (orario, owner, contatti) - da compilare
-- [ ] Piano rollback confermato con tempi (RTO) e responsabilita - da compilare
+- [x] Finestra di deploy confermata: `2026-02-13 16:30-17:30` (Owner: Matteo, contatti: Chat/Diretto)
+- [x] Piano rollback confermato con tempi (RTO) e responsabilita: ripristino Host "Ripristina tutti i file e i database", `RTO 15 minuti`, owner Matteo
 - [x] URL smoke produzione confermato: `https://ronzanieditore.it/nav-3d-test/?r3d_scene=on` (`HTTP 200`)
 - [x] Ultimo smoke strict staging/target verde (`5 passed`) + CI GitHub verde (`run 21986416578-1`)
 
@@ -19,7 +19,7 @@ Evidenze sezione 1:
 - `docs/evidence/z2-predeploy-20260213/scene-health.json`
 - `docs/evidence/z2-predeploy-20260213/mapping-health.json`
 
-Stato sezione 1 (Go/No-Go): `4/7 completati`, `3/7 pending operativi`.
+Stato sezione 1 (Go/No-Go): `7/7 completati`, `GO`.
 
 ## 2) Deploy Produzione
 
@@ -83,6 +83,8 @@ Rollback immediato se almeno uno:
 - [ ] Checklist operativa compilata e archiviata
 
 Owner deploy:
+Matteo
 Data/ora deploy:
+Pianificata `2026-02-13 16:30-17:30`
 Data/ora chiusura Z2:
 Note finali:
