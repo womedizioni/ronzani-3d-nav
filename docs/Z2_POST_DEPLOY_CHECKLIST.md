@@ -25,9 +25,11 @@ Stato sezione 1 (Go/No-Go): `7/7 completati`, `GO`.
 
 - [x] Upload/aggiornamento plugin in produzione completato (conferma operativa Matteo)
 - [x] Plugin attivo (validato da smoke strict post-deploy)
-- [ ] Nessun errore PHP nel log server (pending verifica pannello hosting)
-- [ ] Cache applicativa/CDN invalidate eseguita (se presente) - pending conferma
+- [x] Nessun errore PHP nel log server (conferma operativa: "PHP nessun errore")
+- [x] Cache applicativa/CDN invalidate eseguita (conferma operativa: "CACHE SG pulita")
 - [x] Verifica pagina target con shortcode `[ronzani_3d_nav]` (`HTTP 200` + smoke strict verde)
+
+Stato sezione 2 (Deploy Produzione): `5/5 completati`.
 
 ## 3) Verifica Immediata Post-Deploy (T0)
 
@@ -35,6 +37,8 @@ Stato sezione 1 (Go/No-Go): `7/7 completati`, `GO`.
 - [x] QA panel runtime: flow checks verdi (coperto da test smoke `qa flow`)
 - [x] QA panel runtime: smoke interno verde (equivalenza funzionale tramite smoke strict end-to-end)
 - [x] Smoke strict Playwright post-deploy verde (`5 passed`, `unexpected=0`, `flaky=0`)
+
+Stato sezione 3 (T0): `4/4 completati`.
 
 Evidenze sezione 3:
 - QA Panel quick checks: `OK (46/46)`
