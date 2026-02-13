@@ -2,6 +2,17 @@
 
 Data: 2026-02-13
 
+## Stato attuale
+
+`COMPLETATO`
+
+Evidenze:
+- Repository: `womedizioni/ronzani-3d-nav`
+- Workflow: `Ronzani 3D Nav Smoke`
+- Run manuale (`workflow_dispatch`) verde
+- Artifact presenti: JSON + HTML (+ traces)
+- Run id: `21986416578-1`
+
 ## Obiettivo
 
 Promuovere `Z1` da `Local CI equivalent` a `DONE formale` con run automatico su GitHub Actions e artifact archiviati per ogni release candidate.
