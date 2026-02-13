@@ -59,14 +59,20 @@ Output atteso:
 
 Controlli consigliati a T+1h, T+4h, T+12h, T+24h:
 
-- [ ] Errori runtime JS critici assenti (console monitor / RUM se disponibile)
-- [ ] Errori PHP/WP critici assenti nei log server
-- [ ] `scene-config` endpoint risponde correttamente
-- [ ] `mapping` endpoint risponde correttamente
-- [ ] Navigazione core (Explore -> Preview -> Article) funzionante
-- [ ] Deep-link/back-forward funzionanti
-- [ ] Performance percepita stabile su desktop/mobile
-- [ ] Nessuna segnalazione P1/P0 da editorial/team
+- [x] Errori runtime JS critici assenti (checkpoint T+1h: smoke strict verde)
+- [ ] Errori PHP/WP critici assenti nei log server (da riconfermare ai checkpoint successivi)
+- [x] `scene-config` endpoint risponde correttamente (`summary.ok=true`, `HTTP 200`, T+1h)
+- [x] `mapping` endpoint risponde correttamente (`summary.ok=true`, `HTTP 200`, T+1h)
+- [x] Navigazione core (Explore -> Preview -> Article) funzionante (smoke strict T+1h)
+- [x] Deep-link/back-forward funzionanti (smoke strict T+1h)
+- [x] Performance percepita stabile su desktop/mobile (nessun degrado rilevato in smoke T+1h)
+- [ ] Nessuna segnalazione P1/P0 da editorial/team (raccolta manuale in corso)
+
+Checkpoint T+1h (2026-02-13T14:01:04Z):
+- Pagina target: `HTTP 200`
+- `scene-health`: `ok=true`, `strict_ok=true`, `warnings=0`, `blockers=0`
+- `mapping-health`: `ok=true`, `strict_ok=true`, `warnings=0`
+- Smoke strict: `5 passed`, `unexpected=0`, `flaky=0`
 
 ## 5) Criteri Rollback
 
