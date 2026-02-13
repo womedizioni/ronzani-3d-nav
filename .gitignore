@@ -1,0 +1,9 @@
+node_modules/
+test-results/
+qa/smoke/reports/
+
+*.zip
+*.log
+npm-debug.log*
+
+.DS_Store

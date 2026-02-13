@@ -1,0 +1,13 @@
+{
+  "name": "ronzani-3d-nav-qa",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "qa:smoke": "playwright test -c qa/smoke/playwright.config.mjs",
+    "qa:smoke:headed": "playwright test -c qa/smoke/playwright.config.mjs --headed",
+    "qa:smoke:debug": "PWDEBUG=1 playwright test -c qa/smoke/playwright.config.mjs --workers=1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0"
+  }
+}
