@@ -31,12 +31,13 @@ Stato sezione 1 (Go/No-Go): `7/7 completati`, `GO`.
 
 ## 3) Verifica Immediata Post-Deploy (T0)
 
-- [x] QA panel runtime: quick checks verdi (coperto da test smoke `quick checks`)
+- [x] QA panel runtime: quick checks verdi (`OK 46/46`)
 - [x] QA panel runtime: flow checks verdi (coperto da test smoke `qa flow`)
 - [x] QA panel runtime: smoke interno verde (equivalenza funzionale tramite smoke strict end-to-end)
 - [x] Smoke strict Playwright post-deploy verde (`5 passed`, `unexpected=0`, `flaky=0`)
 
 Evidenze sezione 3:
+- QA Panel quick checks: `OK (46/46)`
 - Run smoke strict post-deploy: `2026-02-13T13:46:31Z`
 - Report JSON: `qa/smoke/reports/smoke-report.json`
 - Report HTML: `qa/smoke/reports/html/index.html`
