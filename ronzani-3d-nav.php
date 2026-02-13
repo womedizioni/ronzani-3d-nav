@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Ronzani 3D Nav
- * Version: 0.3.0-rc1
+ * Version: 1.0.0
  * Author: Ronzani
  */
 
