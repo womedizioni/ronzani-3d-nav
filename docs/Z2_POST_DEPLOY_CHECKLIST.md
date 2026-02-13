@@ -5,13 +5,21 @@ Scope: rollout controllato produzione + rollback plan + verifica 24h
 
 ## 1) Pre-deploy (Go/No-Go)
 
-- [ ] Versione plugin target definita (es. `1.0.0`)
-- [ ] Backup completo disponibile (DB + files)
-- [ ] Snapshot configurazioni plugin esportato (scene config + mapping)
-- [ ] Finestra di deploy confermata (orario, owner, contatti)
-- [ ] Piano rollback confermato con tempi (RTO) e responsabilita
-- [ ] URL smoke produzione confermato
-- [ ] Ultimo smoke strict staging verde
+- [x] Versione plugin target definita: `1.0.0` (versione codice corrente: `0.3.0-rc1`)
+- [ ] Backup completo disponibile (DB + files) - in attesa conferma operativa hosting/DBA
+- [x] Snapshot configurazioni plugin esportato (scene config + mapping)
+- [ ] Finestra di deploy confermata (orario, owner, contatti) - da compilare
+- [ ] Piano rollback confermato con tempi (RTO) e responsabilita - da compilare
+- [x] URL smoke produzione confermato: `https://ronzanieditore.it/nav-3d-test/?r3d_scene=on` (`HTTP 200`)
+- [x] Ultimo smoke strict staging/target verde (`5 passed`) + CI GitHub verde (`run 21986416578-1`)
+
+Evidenze sezione 1:
+- `docs/evidence/z2-predeploy-20260213/scene-config.json`
+- `docs/evidence/z2-predeploy-20260213/mapping.json`
+- `docs/evidence/z2-predeploy-20260213/scene-health.json`
+- `docs/evidence/z2-predeploy-20260213/mapping-health.json`
+
+Stato sezione 1 (Go/No-Go): `4/7 completati`, `3/7 pending operativi`.
 
 ## 2) Deploy Produzione
 
